@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<FindFlights />} />
         <Route path="/displayFlights/:from/:to/:date" element={<DisplayFlights />} />
         <Route path="/passengerDetails/:flightId" element={<PassengerDetails />} />
-        <Route path="/confirmReservation" element={<ConfirmReservation />} />
+        <Route path="/confirmReservation/:reservationId" element={<ConfirmReservation />} />
       </Routes>
     </>
   )
