@@ -19,7 +19,7 @@ function DisplayFlights() {
         console.error('Error fetching flight details:', error);
         setLoading(false);
       });
-  }, [count,from, to, date]);
+  }, [count]);
   
 
   return (
@@ -31,7 +31,7 @@ function DisplayFlights() {
               <th>Airline</th>
               <th>Departure City</th>
               <th>Arrival City</th>
-              <th>Departure Time</th>
+              <th>Departure Date and Time</th>
           </tr>
         </thead>
         <tbody>
